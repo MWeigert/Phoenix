@@ -7,7 +7,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import tlp.tools.character.LoadCharacterLogFile;
+import tla.tools.character.LoadCharacterLogFile;
 
 /**
  * @author Tingle Driftwood (Guk)

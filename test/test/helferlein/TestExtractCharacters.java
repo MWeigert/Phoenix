@@ -5,7 +5,7 @@ package test.helferlein;
 
 import java.io.File;
 
-import tlp.tools.character.ExtractCharacters;
+import tla.tools.character.ExtractCharacters;
 
 /**
  * @author Tingle Driftwood (Guk)

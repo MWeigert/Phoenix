@@ -1,4 +1,4 @@
-Project: Phoenix (Tingles Log Parser)
+Project: Phoenix (Tingles Log Analyzer)
 
 Programming Environment:	Eclipse (Java)
 Release Change Log:		README (GitHub)
@@ -19,3 +19,6 @@ Programmer:			M. Weigert
                 further processing.
 22.01.2012 MW - Created a few manual test classes to check 
                 functionality of the different classes.
+22.01.2012 MW - Added first few GUIs to project.
+22.01.2012 MW - Changed Name from Tingles Log Parser to
+                Tingles Log Analyzer.

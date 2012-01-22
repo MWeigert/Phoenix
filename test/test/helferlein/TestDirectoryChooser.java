@@ -3,7 +3,7 @@
  */
 package test.helferlein;
 
-import tlp.gui.io.DirectoryChooser;
+import tla.gui.io.DirectoryChooser;
 
 /**
  * Class which tests the functionality of the DirectoryChooser and
