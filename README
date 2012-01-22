@@ -9,7 +9,13 @@ Programmer:			M. Weigert
 ************************* Change Log *************************
 **************************************************************
 
-18.01.2012 MW - Project start
-18.01.2012 MW - Create GitHub repository
+18.01.2012 MW - Project start.
+18.01.2012 MW - Create GitHub repository.
 21.01.2012 MW - Reorganized project and start a new cleaned
-                GitHub repository
+                GitHub repository.
+22.01.2012 MW - Project is now able to extract character names
+                out of the log file names.
+22.01.2012 MW - Project now load a log file in a hash map for
+                further processing.
+22.01.2012 MW - Created a few manual test classes to check 
+                functionality of the different classes.

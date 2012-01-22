@@ -3,6 +3,9 @@
  */
 package tlp.character.character;
 
+import tlp.character.utils.EQ2Class;
+import tlp.character.utils.EQ2Server;
+
 /**
  * @author Tingle Driftwood (Guk)
  * @version 1.0
@@ -12,14 +15,29 @@ public class EQ2Character {
 
 	private String name;
 	private String race;
-	private String server;
-	private String advClass;
-	private int advLevel;
-	private String artClass;
-	private int artLevel;
+	private EQ2Server server;
+	private EQ2Class adventureClass;
+	private EQ2Class artisanClass;
 	
-	public EQ2Character(String name) {
+	public EQ2Character(String name, String race, EQ2Server server, EQ2Class advClass) {
 		this.name = name;
+		this.race = race;
+		this.server = server;
+		this.adventureClass = advClass;
+	}
+	
+	/**
+	 * @param advClass the adventure class to set
+	 */
+	public void setAdventureClass(EQ2Class advClass) {
+		this.adventureClass = advClass;
+	}
+	
+	/**
+	 * @param artClass the artisan class to set
+	 */
+	public void setArtisanClass(EQ2Class artClass) {
+		this.artisanClass = artClass;
 	}
 	
 	/**
@@ -32,22 +50,22 @@ public class EQ2Character {
 	/**
 	 * @param server the server to set
 	 */
-	public void setServer(String server) {
+	public void setServer(EQ2Server server) {
 		this.server = server;
 	}
 
 	/**
-	 * @param advClass the advClass to set
+	 * @return the adventure class
 	 */
-	public void setAdvClass(String advClass) {
-		this.advClass = advClass;
+	public EQ2Class getAdventureClass() {
+		return adventureClass;
 	}
-
+	
 	/**
-	 * @param artClass the artClass to set
+	 * @return the artisan class
 	 */
-	public void setArtClass(String artClass) {
-		this.artClass = artClass;
+	public EQ2Class getArtisanClass() {
+		return artisanClass;
 	}
 	
 	/**
@@ -56,28 +74,18 @@ public class EQ2Character {
 	public String getName() {
 		return name;
 	}
+	
 	/**
 	 * @return the race
 	 */
 	public String getRace() {
 		return race;
 	}
+	
 	/**
 	 * @return the server
 	 */
 	public String getServer() {
-		return server;
-	}
-	/**
-	 * @return the advClass
-	 */
-	public String getAdvClass() {
-		return advClass;
-	}
-	/**
-	 * @return the artClass
-	 */
-	public String getArtClass() {
-		return artClass;
+		return server.toString();
 	}
 }

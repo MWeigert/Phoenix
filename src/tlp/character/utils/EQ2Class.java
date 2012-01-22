@@ -31,5 +31,7 @@ public class EQ2Class {
 		return artisanClass;
 	}
 	
-	public void 
+	public void setClassLevel (int lvl) {
+		this.classLevel = lvl;
+	}
 }
