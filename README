@@ -22,3 +22,5 @@ Programmer:			M. Weigert
 22.01.2012 MW - Added first few GUIs to project.
 22.01.2012 MW - Changed Name from Tingles Log Parser to
                 Tingles Log Analyzer.
+25.01.2012 MW - Added time stamp extraction functionality.
+27.01.2012 MW - Added extract level up.

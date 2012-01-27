@@ -33,7 +33,7 @@ public class TimeStamp {
 			stamp = formatter.parse(timeStamp);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
-			new ExceptionDisplay("Error while extracing time stamp.");
+			new ExceptionDisplay("Error while extracing time stamp from: " + timeStamp);
 			e.printStackTrace();
 		}
 	}
