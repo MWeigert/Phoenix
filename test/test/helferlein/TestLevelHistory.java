@@ -29,6 +29,11 @@ public class TestLevelHistory {
 		log = lCharlog.getLogMap();
 		LevelHistory adv = new LevelHistory();
 		adv.setLvlHistory(log);
+		for (int i=1; i<=90; i++) {
+			System.out.println("********** Level: " + i + " **********");
+			System.out.println(" Adventure: " + adv.getAdvLvlHistory().get(i));
+			System.out.println("Tradeskill: " + adv.getArtLvlHisory().get(i));
+		}
 	}
 
 }

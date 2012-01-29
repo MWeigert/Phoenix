@@ -13,20 +13,20 @@ import java.util.Map;
  */
 public class LevelHistory {
 
-	Map<Date, Integer> advLvlHistory = new HashMap<Date, Integer>();
-	Map<Date, Integer> artLvlHistory = new HashMap<Date, Integer>();
+	Map<Integer, Date> advLvlHistory = new HashMap<Integer, Date>();
+	Map<Integer, Date> artLvlHistory = new HashMap<Integer, Date>();
 
 	/**
 	 * @return the advLvlHistory
 	 */
-	public Map<Date, Integer> getAdvLvlHistory() {
+	public Map<Integer, Date> getAdvLvlHistory() {
 		return advLvlHistory;
 	}
 
 	/**
 	 * @return the artLvlHistory
 	 */
-	public Map<Date, Integer> getArtLvlHisory() {
+	public Map<Integer, Date> getArtLvlHisory() {
 		return artLvlHistory;
 	}
 	
@@ -45,8 +45,7 @@ public class LevelHistory {
 				date = ts.getStamp();
 				String str = row.substring(x + 18, row.length() - 1);
 				int lvl = Integer.valueOf(str);
-				advLvlHistory.put(date, lvl);
-				System.out.println("Adventure: " + advLvlHistory.get(date));
+				advLvlHistory.put(lvl, date);
 			} else {
 				x = row.indexOf("Your tradeskill level is now");
 				if (x != -1) {
@@ -54,8 +53,7 @@ public class LevelHistory {
 					date = ts.getStamp();
 					String str = row.substring(x + 29, row.length() - 1);
 					int lvl = Integer.valueOf(str);
-					artLvlHistory.put(date, lvl);
-					System.out.println("Tradeskill: " + artLvlHistory.get(date));
+					artLvlHistory.put(lvl, date);
 				}
 			}
 			
