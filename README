@@ -24,3 +24,9 @@ Programmer:			M. Weigert
                 Tingles Log Analyzer.
 25.01.2012 MW - Added time stamp extraction functionality.
 27.01.2012 MW - Added extract level up.
+03.02.2012 MW - Added XYGrid (displays a grid in a JPanel)
+                Added GetMinMaxLevel (extracts min & max 
+                Level from LevelHistory)
+                Added LevelHistoryPanel (displays the level
+                as a graph)
+                A few bug fixes to different classes.

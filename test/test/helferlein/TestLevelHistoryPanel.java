@@ -5,13 +5,13 @@ package test.helferlein;
 
 import javax.swing.JFrame;
 
-import tla.gui.tools.XYGrid;
+import tla.gui.panel.LevelHistoryPanel;
 
 /**
  * @author Tingle Driftwood (Guk)
  * @version 1.0
  */
-public class TestXYGrid {
+public class TestLevelHistoryPanel {
 
 	/**
 	 * @param args
@@ -21,7 +21,8 @@ public class TestXYGrid {
 		JFrame f = new JFrame();
 	    f.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 	    f.setSize( 1100, 750 );
-	    f.add(new XYGrid());
+	    f.setTitle("LevelHistoryPanel - Test");
+	    f.add(new LevelHistoryPanel());
 	    f.setVisible( true );
 	}
 

@@ -22,6 +22,7 @@ public class LoadCharacterLogFile {
 
 	Map<Integer, String> log = new HashMap<Integer, String>();
 	
+	@SuppressWarnings("unused")
 	public LoadCharacterLogFile(File file) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(file));
