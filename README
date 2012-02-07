@@ -30,3 +30,5 @@ Programmer:			M. Weigert
                 Added LevelHistoryPanel (displays the level
                 as a graph)
                 A few bug fixes to different classes.
+07.02.2012 MW - Minor changes in GUI handling.
+                Added Valentine quest tracker classes (Basis)
